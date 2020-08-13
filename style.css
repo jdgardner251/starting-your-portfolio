@@ -132,7 +132,7 @@ main h4 {
   .group{
     flex-direction: row;
   }
-}
+
 
   header {
     display: flex;
