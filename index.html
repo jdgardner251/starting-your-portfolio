@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content=content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JD Gardner: Software Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -10,12 +10,21 @@
   </head>
   <body>
 
-<!-- Within this page I'm going to have 4 section.  Intro, About, Contact, and Projects section -->
+<!-- Within this page I'm going to have a header and  4 sections.  Intro, About, Contact, and Projects section -->
+<header>
+  <h1>JD Gardner</h1>
+  	<nav>
+			<ul id="menu" class="the-ul">
+				<li><a href="#intro">Intro</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+</header>
 
     <main>
-      <h1>JD Gardner</h1>
-      <h2>Learning to Develop Software</h2>
-      <section>
+      <section id="intro">
         <!-- use group and item classes to allow for flexbox and media queries -->
         <div class="group">
           <div class="item">
@@ -30,7 +39,7 @@
       </section>
 
 
-      <section>
+      <section id="about">
         <h3>About Me</h3>
         <!-- use group and item classes to allow for flexbox and media queries -->
         <div class="group">
@@ -63,24 +72,8 @@
         </div>
       </section>
 
-      <!-- Using a contact ID as I think its the only contact section...and will help style some of the icons. -->
-      <section id="contact">
-        <!-- use group and item classes to allow for flexbox and media queries -->
-        <h3>Contact</h3>
-        <div class="group bg-primary">
-          <div class="item">
-            <a href=""><i class=" big-icon far fa-envelope"></i></a>
-          </div>
-          <div class="item">
-            <a href=""><i class=" big-icon fab fa-twitter"></i></a>
-          </div>
-          <div class="item">
-            <a href=""><i class=" big-icon fab fa-github"></i></a>
-          </div>
-        </div>
-      </section>
-
-      <section>
+     
+      <section id="portfolio">
         <h3>Projects</h3>
         <!-- use group and item classes to allow for flexbox and media queries -->
         <div class="group">
@@ -116,6 +109,42 @@
         </div>
         
       </section>
+
+       <!-- Using a contact ID as I think its the only contact section...and will help style some of the icons. -->
+      <section id="contact">
+        <!-- use group and item classes to allow for flexbox and media queries -->
+        <h3>Contact</h3>
+        <div class="group bg-primary">
+          <div class="item">
+            <a href=""><i class=" big-icon far fa-envelope"></i></a>
+          </div>
+          <div class="item">
+            <a href=""><i class=" big-icon fab fa-twitter"></i></a>
+          </div>
+          <div class="item">
+            <a href=""><i class=" big-icon fab fa-github"></i></a>
+          </div>
+        </div>
+         <div class="group">
+           <div class="item">
+               <form action="https://formspree.io/moqkbkjz" method="POST">
+          <label for="user-name">Name:</label>
+          <input id="user-name" type="text" name="name">
+
+          <label for="user-email">Email:</label>
+          <input id="user-email" type="text" name="email">
+
+          <label for="user-message">Message:</label>
+          <textarea id="user-message" name="message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+             
+           </div>
+         
+          </div>
+
+      </section>
+
 
 
     </main>
